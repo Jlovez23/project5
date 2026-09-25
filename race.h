@@ -2,15 +2,16 @@
 #define RACE_H_EXISTS
 
 #include <string>
+#include "horse.h"
 
 class race{
 	private:
-		int NUM_HORSES
-		int TRACK_LENGTH
+		const static int NUM_HORSES = 5;
+		const int TRACK_LENGTH = 15;
 	public:
-		horse::horses[]
-		race()
-		start()
-}//end race def
+		horse horses[NUM_HORSES];
+		race();
+		void start();
+}; //end race def
 
 #endif

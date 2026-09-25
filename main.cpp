@@ -3,5 +3,8 @@
 #include "race.h"
 
 int main(){
-	race::start()
+	srand(time(NULL));
+	race r;
+	r.start();
+	return 0;
 }
